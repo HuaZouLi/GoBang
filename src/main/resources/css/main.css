@@ -1,0 +1,19 @@
+.dialog-accept {
+    -fx-text-fill: #03A9F4;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-padding: 0.7em 0.8em;
+}
+
+.dialog-failure {
+    -fx-text-fill: red;
+    -fx-font-size: 14px;
+    -fx-font-weight: BOLD;
+    -fx-padding: 0.7em 0.8em;
+}
+
+.dialog {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+
+}

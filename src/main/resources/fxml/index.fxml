@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane stylesheets="@../css/main.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.learn.gobang.controller.IndexController">
+   <children>
+      <HBox prefHeight="660.0" prefWidth="1080.0">
+         <children>
+            <Region prefWidth="380.0" style="-fx-background-image: url('/img/left.png'); -fx-background-size: cover;" />
+            <VBox prefWidth="700.0" style="-fx-alignment: center; -fx-spacing: 60;">
+               <children>
+                  <Label text="登 录" textFill="#9081f1">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtUsername" focusColor="WHITE" labelFloat="true" maxWidth="450.0" prefWidth="450.0" promptText="用户名" style="-fx-border-width: 0 0 1 0; -fx-border-color: rgb(144,129,241); -fx-text-fill: rgb(144,129,241); -fx-prompt-text-fill: rgb(144,129,241);" unFocusColor="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="16.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="txtPassword" focusColor="WHITE" labelFloat="true" maxWidth="450.0" prefWidth="450.0" promptText="密码" style="-fx-border-width: 0 0 1 0; -fx-border-color: rgb(144,129,241); -fx-text-fill: rgb(144,129,241); -fx-prompt-text-fill: rgb(144,129,241);" unFocusColor="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="16.0" top="10.0" />
+                     </padding>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="btnLogin" buttonType="RAISED" onAction="#onClickBtnLogin" prefHeight="60.0" prefWidth="280.0" ripplerFill="WHITE" style="-fx-background-color: linear-gradient(to bottom right, #e0c3fc 0%, #8ec5fc 100%);" text="Login" textFill="#f6f6f6">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXButton>
+                  <HBox prefHeight="50.0" prefWidth="700.0" spacing="320.0" style="-fx-alignment: center;">
+                     <children>
+                        <Hyperlink style="-fx-underline: true;" stylesheets="@../css/index.css" text="注册账号">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Hyperlink>
+                        <Hyperlink style="-fx-underline: true;" stylesheets="@../css/index.css" text="找回密码">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</StackPane>
