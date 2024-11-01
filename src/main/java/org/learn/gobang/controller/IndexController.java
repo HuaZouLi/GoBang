@@ -9,6 +9,7 @@ import de.felixroske.jfxsupport.GUIState;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.input.KeyCode;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -49,10 +50,15 @@ public class IndexController implements Initializable {
         GUIState.getStage().setResizable(false);
 
         GUIState.getStage().centerOnScreen();
+
     }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        txtPassword.setOnKeyPressed((event) -> {
+            if(event.getCode()== KeyCode.ENTER){
+                login();
+            }
+        });
     }
 
     @FXML
@@ -91,6 +97,10 @@ public class IndexController implements Initializable {
 
             }
         });
+       login();
+    }
+
+    private void login(){
         String username = txtUsername.getText();
         String password = txtPassword.getText();
         User user=User.builder().username(username).password(password).build();
