@@ -1,0 +1,14 @@
+.hyperlink:hover {
+    -fx-text-fill:  #0099FF;
+}
+
+.hyperlink:visited, .hyperlink:pressed {
+    -fx-stroke-width: 0;
+    -fx-border-width: 0;
+
+}
+
+
+.hyperlink {
+    -fx-text-fill:  rgb(0,0,0);
+}

@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<StackPane stylesheets="@../css/main.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.learn.gobang.controller.IndexController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1080.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.learn.gobang.controller.IndexController">
    <children>
       <HBox prefHeight="660.0" prefWidth="1080.0">
          <children>
@@ -44,7 +44,7 @@
                      </font></JFXButton>
                   <HBox prefHeight="50.0" prefWidth="700.0" spacing="320.0" style="-fx-alignment: center;">
                      <children>
-                        <Hyperlink style="-fx-underline: true;" stylesheets="@../css/index.css" text="注册账号">
+                        <Hyperlink fx:id="hplRegister" onAction="#onClickHplRegister" style="-fx-underline: true;" stylesheets="@../css/index.css" text="注册账号">
                            <font>
                               <Font size="14.0" />
                            </font>

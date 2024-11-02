@@ -5,4 +5,5 @@ import org.learn.gobang.pojo.User;
 
 public interface UserService extends IService<User> {
     User login(User user);
+    boolean register(User user);
 }

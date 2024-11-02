@@ -9,10 +9,8 @@ import de.felixroske.jfxsupport.GUIState;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.input.KeyCode;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import org.apache.http.HttpResponse;
 import org.apache.http.ParseException;
 import org.apache.http.client.methods.HttpGet;
@@ -27,6 +25,7 @@ import org.learn.gobang.pojo.User;
 import org.learn.gobang.service.UserService;
 import org.learn.gobang.utils.SpringContextUtil;
 import org.learn.gobang.view.GameView;
+import org.learn.gobang.view.RegisterView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 
@@ -69,6 +68,14 @@ public class IndexController implements Initializable {
 
     @FXML
     private JFXPasswordField txtPassword;
+
+    @FXML
+    private Hyperlink hplRegister;
+
+    @FXML
+    void onClickHplRegister(ActionEvent event) {
+        AbstractJavaFxApplicationSupport.showView(RegisterView.class);
+    }
 
     @FXML
     void onClickBtnLogin(ActionEvent event) {

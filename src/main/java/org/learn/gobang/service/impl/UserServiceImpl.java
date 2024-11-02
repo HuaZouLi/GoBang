@@ -21,4 +21,15 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         User u = userMapper.selectOne(queryWrapper);
         return u;
     }
+
+    @Override
+    public boolean register(User user) {
+        LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(User::getUsername, user.getUsername());
+        if(userMapper.selectCount(queryWrapper)>0){
+            return false;
+        }
+        userMapper.insert(user);
+        return true;
+    }
 }
