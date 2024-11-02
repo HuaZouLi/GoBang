@@ -27,6 +27,7 @@ import org.learn.gobang.model.SnakeMap;
 import org.learn.gobang.ui.SnakePane;
 import org.learn.gobang.view.GameView;
 import org.learn.gobang.view.IndexView;
+import org.learn.gobang.view.MainView;
 import org.springframework.context.annotation.Scope;
 
 import javax.annotation.PostConstruct;
@@ -229,7 +230,7 @@ public class GameController implements Initializable {
         else k=1;
         String s=String.format("玩家%d获胜",k);
         ViewController.alertWindow("提示",s,"确认",()->{
-            AbstractJavaFxApplicationSupport.showView(IndexView.class);
+            AbstractJavaFxApplicationSupport.showView(MainView.class);
         },0);
     }
 }

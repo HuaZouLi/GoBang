@@ -3,6 +3,7 @@ package org.learn.gobang;
 import de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport;
 import de.felixroske.jfxsupport.GUIState;
 import org.learn.gobang.view.IndexView;
+import org.learn.gobang.view.MainView;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

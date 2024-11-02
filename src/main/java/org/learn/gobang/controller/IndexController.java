@@ -25,6 +25,7 @@ import org.learn.gobang.pojo.User;
 import org.learn.gobang.service.UserService;
 import org.learn.gobang.utils.SpringContextUtil;
 import org.learn.gobang.view.GameView;
+import org.learn.gobang.view.MainView;
 import org.learn.gobang.view.RegisterView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
@@ -118,7 +119,7 @@ public class IndexController implements Initializable {
             },1);
         }else{
             BaseContext.setUser(u);
-            AbstractJavaFxApplicationSupport.showView(GameView.class);
+            AbstractJavaFxApplicationSupport.showView(MainView.class);
 
         }
     }

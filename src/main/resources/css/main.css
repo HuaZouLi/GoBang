@@ -17,3 +17,35 @@
     -fx-background-radius: 20px;
 
 }
+
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: red;
+}
+.img-avatar{
+    -fx-image: url(img/left.png);
+}
+
+.btn-info{
+    -fx-background-color: #909399;
+    -fx-text-fill: white;
+}
+
+.btn-success{
+    -fx-background-color: #67C23A;
+    -fx-text-fill: white;
+}
+
+.btn-warning{
+    -fx-background-color: #E6A23C;
+    -fx-text-fill: white;
+}
+
+.btn-danger{
+    -fx-background-color: #F56C6C;
+    -fx-text-fill: white;
+}
+
+.btn-primary{
+    -fx-background-color: #409EFF;
+    -fx-text-fill: white;
+}
